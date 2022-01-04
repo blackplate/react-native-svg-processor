@@ -1,0 +1,22 @@
+{
+  "name": "react-native-svg-processor",
+  "version": "1.0.0",
+  "description": "[WIP]: Convert SVG to react-native-svg ready components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": ["./index.js"],
+  "keywords": [],
+  "author": "Dawid van der Hoven",
+  "license": "ISC",
+  "dependencies": {
+    "@svgr/core": "^6.1.2",
+    "@svgr/plugin-jsx": "^6.1.2",
+    "@svgr/plugin-prettier": "^6.1.2",
+    "@svgr/plugin-svgo": "^6.1.2",
+    "camelcase": "^6.3.0",
+    "glob": "^7.2.0",
+    "prettier": "^2.5.1"
+  }
+}
