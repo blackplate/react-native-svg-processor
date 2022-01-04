@@ -2,13 +2,13 @@
   "name": "@blackplate/react-native-svg-processor",
   "version": "0.0.0-development",
   "description": "[WIP]: Convert SVG to react-native-svg ready components",
-  "main": "./src/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release"
   },
   "files": [
-    "./src/index.js"
+    "src/index.js"
   ],
   "keywords": [],
   "author": "Dawid van der Hoven",
