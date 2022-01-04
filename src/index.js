@@ -15,6 +15,13 @@ const fileTemplate = ({imports, componentName, props, jsx, exports}, {tpl}) => {
   `;
 };
 
+const prettierConfig = {
+  useTabs: false,
+  bracketSpacing: false,
+  trailingComma: 'all',
+  arrowParens: 'avoid',
+};
+
 function processFiles(srcFiles, outputPath) {
   glob(`${srcFiles.toString()}/**/*.svg`, function (err, files) {
     if (err) {
@@ -38,13 +45,9 @@ function processFiles(srcFiles, outputPath) {
           template: fileTemplate,
           native: true,
           typescript: true,
+          // TODO: standard color should be overwritable
           replaceAttrValues: {'#000': 'currentColor'},
-          prettierConfig: {
-            useTabs: false,
-            bracketSpacing: false,
-            trailingComma: 'all',
-            arrowParens: 'avoid',
-          },
+          prettierConfig,
           svgoConfig: {
             multipass: true,
             plugins: [
@@ -90,10 +93,7 @@ function saveIndexFile(outputPath) {
     export { ${files.map(file => `${file}`).join(', ')} };
     `;
 
-  const prettyJSCode = prettier.format(indexFile, {
-    singleQuote: true,
-    trailingComma: 'es5',
-  });
+  const prettyJSCode = prettier.format(indexFile, prettierConfig);
 
   fs.writeFile(indexFilePath, prettyJSCode, 'utf8', () =>
     console.log('index saved'),
