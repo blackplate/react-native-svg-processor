@@ -1,10 +1,11 @@
 {
   "name": "@blackplate/react-native-svg-processor",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "[WIP]: Convert SVG to react-native-svg ready components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
   },
   "files": [
     "./index.js"
@@ -18,13 +19,18 @@
     "@svgr/plugin-prettier": "^6.1.2",
     "@svgr/plugin-svgo": "^6.1.2",
     "camelcase": "^6.3.0",
-    "glob": "^7.2.0",
-    "prettier": "^2.5.1"
+    "glob": "^7.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1",
+    "semantic-release": "^18.0.1"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blackplate/react-native-svg-processor.git"
+    "url": "https://github.com/blackplate/react-native-svg-processor.git"
   },
   "bugs": {
     "url": "https://github.com/blackplate/react-native-svg-processor/issues"

@@ -41,6 +41,9 @@ function processFiles(srcFiles, outputPath) {
           replaceAttrValues: {'#000': 'currentColor'},
           prettierConfig: {
             useTabs: false,
+            bracketSpacing: false,
+            trailingComma: 'all',
+            arrowParens: 'avoid',
           },
           svgoConfig: {
             multipass: true,
