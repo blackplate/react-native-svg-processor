@@ -15,11 +15,14 @@ const fileTemplate = ({imports, componentName, props, jsx, exports}, {tpl}) => {
   `;
 };
 
+// TODO: load from config file
+// const prettierRcConfig = await prettier.resolveConfig(filePath, { editorconfig: true })
 const prettierConfig = {
   useTabs: false,
   bracketSpacing: false,
   trailingComma: 'all',
   arrowParens: 'avoid',
+  singleQuote: true,
 };
 
 function processFiles(srcFiles, outputPath) {
