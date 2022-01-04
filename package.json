@@ -1,12 +1,14 @@
 {
-  "name": "react-native-svg-processor",
+  "name": "@blackplate/react-native-svg-processor",
   "version": "1.0.0",
   "description": "[WIP]: Convert SVG to react-native-svg ready components",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "files": ["./index.js"],
+  "files": [
+    "./index.js"
+  ],
   "keywords": [],
   "author": "Dawid van der Hoven",
   "license": "ISC",
@@ -18,5 +20,14 @@
     "camelcase": "^6.3.0",
     "glob": "^7.2.0",
     "prettier": "^2.5.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackplate/react-native-svg-processor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/blackplate/react-native-svg-processor/issues"
+  },
+  "homepage": "https://github.com/blackplate/react-native-svg-processor#readme"
 }
